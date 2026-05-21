@@ -1,57 +1,14 @@
-# Who's That Pokemon
+# Cursor Playground
 
-Webapp om je eigen "Who's That Pokemon" te maken: upload een afbeelding, laat automatisch een silhouette/cutout genereren, en reveal daarna de originele afbeelding met je eigen naam.
+This repository is a small playground for trying Cursor.
 
-## Stack
+Use it to experiment with agent runs, branch changes, README edits, and simple project updates without worrying about breaking a real application. It is meant to be a low-stakes space for testing how Cursor works from GitHub, Slack, and the editor.
 
-- Frontend: React + TypeScript + Vite
-- Backend: FastAPI
-- Image processing: Pillow + OpenCV
-- Opslag: lokale SQLite + bestanden in `data/`
+Things to try here:
 
-## Lokaal starten (zonder Docker)
+- Ask Cursor to create or update files.
+- Make a small code change and open a pull request.
+- Test how Cursor explains a repository.
+- Use the repo as a sandbox for new workflows.
 
-1) Backend:
-
-```bash
-cd backend
-python -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements.txt
-uvicorn app.main:app --reload
-```
-
-2) Frontend (nieuwe terminal):
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-3) Open:
-
-- Frontend: [http://localhost:5173](http://localhost:5173)
-- API docs: [http://localhost:8000/docs](http://localhost:8000/docs)
-
-## Met Docker Compose
-
-```bash
-docker compose up
-```
-
-## Testen
-
-- Backend:
-
-```bash
-cd backend
-pytest
-```
-
-- Frontend:
-
-```bash
-cd frontend
-npm test
-```
+Nothing in this repository is production-critical. It exists so Cursor can be tested freely.
